@@ -12,7 +12,7 @@ export const Navbar = () => {
 
     return (
         <>
-            <nav className='flex items-center flex-wrap bg-purple-300 p-3 '>
+            <nav className='flex items-center flex-wrap bg-purple-900 p-3 '>
                 <Link href='/'>
                     <a className='inline-flex items-center p-2 mr-4 '>
                         <FontAwesomeIcon icon={faBrain} className='fill-current text-white h-8 w-8 mr-2' />
@@ -22,7 +22,7 @@ export const Navbar = () => {
                     </a>
                 </Link>
                 <button 
-                    className='inline-flex p-1 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+                    className='inline-flex p-1 bg-purple-700 hover:bg-purple-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
                     onClick={handleClick}
                 >
                     <svg
@@ -46,22 +46,22 @@ export const Navbar = () => {
                 >
                     <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
                         <Link href='/'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white '>
+                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center bg-purple-700 hover:bg-purple-600 hover:text-white mr-2'>
                                 <FontAwesomeIcon icon={faPlus} className='fill-current text-white h-8 w-8' />
                             </a>
                         </Link>
                         <Link href='/'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white '>
+                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center bg-purple-700 hover:bg-purple-600 hover:text-white mr-2'>
                             <FontAwesomeIcon icon={faMinus} className='fill-current text-white h-8 w-8' />
                             </a>
                         </Link>
                         <Link href='/'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white '>
+                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center bg-purple-700 hover:bg-purple-600 hover:text-white mr-2'>
                             <FontAwesomeIcon icon={faTimes} className='fill-current text-white h-8 w-8' />
                             </a>
                         </Link>
                         <Link href='/'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white '>
+                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center bg-purple-700 hover:bg-purple-600 hover:text-white mr-2'>
                             <FontAwesomeIcon icon={faDivide} className='fill-current text-white h-8 w-8' />
                             </a>
                         </Link>
