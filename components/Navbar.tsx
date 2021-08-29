@@ -9,10 +9,10 @@ export const Navbar = () => {
     const handleClick = () => {
         setActive(!active);
     }
-    
+
     return (
         <>
-            <nav className='flex items-center flex-wrap bg-green-300 p-3 '>
+            <nav className='flex items-center flex-wrap bg-purple-300 p-3 '>
                 <Link href='/'>
                     <a className='inline-flex items-center p-2 mr-4 '>
                         <FontAwesomeIcon icon={faBrain} className='fill-current text-white h-8 w-8 mr-2' />
@@ -22,11 +22,11 @@ export const Navbar = () => {
                     </a>
                 </Link>
                 <button 
-                    className='inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+                    className='inline-flex p-1 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
                     onClick={handleClick}
                 >
                     <svg
-                        className='w-6 h-6'
+                        className='w-8 h-8'
                         fill='none'
                         stroke='currentColor'
                         viewBox='0 0 24 24'
