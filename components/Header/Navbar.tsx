@@ -1,20 +1,20 @@
-import Link from "next/link";
-import { useState } from "react";
+import Link from 'next/link'
+import { useState } from 'react'
 import {
   faBrain,
   faPlus,
   faMinus,
   faTimes,
   faDivide,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export const Navbar = () => {
-  const [active, setActive] = useState(false);
+export const Navbar = (): JSX.Element => {
+  const [active, setActive] = useState(false)
 
   const handleClick = () => {
-    setActive(!active);
-  };
+    setActive(!active)
+  }
 
   return (
     <>
@@ -51,11 +51,12 @@ export const Navbar = () => {
         </button>
         <div
           className={`${
-            active ? "" : "hidden"
+            active ? '' : 'hidden'
           } w-full lg:inline-flex lg:flex-grow lg:w-auto`}
         >
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto">
             <Link href="/">
+              {/* eslint-disable-next-line max-len */}
               <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center bg-purple-700 hover:bg-purple-600 hover:text-white mr-2">
                 <FontAwesomeIcon
                   icon={faPlus}
@@ -64,6 +65,7 @@ export const Navbar = () => {
               </a>
             </Link>
             <Link href="/">
+              {/* eslint-disable-next-line max-len */}
               <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center bg-purple-700 hover:bg-purple-600 hover:text-white mr-2">
                 <FontAwesomeIcon
                   icon={faMinus}
@@ -72,6 +74,7 @@ export const Navbar = () => {
               </a>
             </Link>
             <Link href="/">
+              {/* eslint-disable-next-line max-len */}
               <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center bg-purple-700 hover:bg-purple-600 hover:text-white mr-2">
                 <FontAwesomeIcon
                   icon={faTimes}
@@ -80,6 +83,7 @@ export const Navbar = () => {
               </a>
             </Link>
             <Link href="/">
+              {/* eslint-disable-next-line max-len */}
               <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center bg-purple-700 hover:bg-purple-600 hover:text-white mr-2">
                 <FontAwesomeIcon
                   icon={faDivide}
@@ -91,5 +95,5 @@ export const Navbar = () => {
         </div>
       </nav>
     </>
-  );
-};
+  )
+}
