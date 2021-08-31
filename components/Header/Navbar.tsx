@@ -48,6 +48,7 @@ export const Navbar = (): JSX.Element => {
               d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
+          
         </button>
         <div
           className={`${
@@ -73,7 +74,7 @@ export const Navbar = (): JSX.Element => {
                 />
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/multiplication">
               {/* eslint-disable-next-line max-len */}
               <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center bg-purple-700 hover:bg-purple-600 hover:text-white mr-2">
                 <FontAwesomeIcon
