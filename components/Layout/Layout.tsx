@@ -1,13 +1,11 @@
 import { Navbar } from '../Header/Navbar'
-import { Footer } from '../Footer/Footer'
+import Footer from '../Footer/Footer'
 
-export default function Layout({ children }: any) {
+export default function Layout({ children }: any): JSX.Element {
   return (
     <>
       <Navbar />
-
       <main>{children}</main>
-
       <Footer />
     </>
   )
