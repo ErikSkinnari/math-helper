@@ -1,4 +1,4 @@
-import Flashcard from "./Flashcard"
+import Flashcard from './Flashcard'
 
 export type FlashcardsProps = {
     flashcards: Flashcard[]
